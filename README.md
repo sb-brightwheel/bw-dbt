@@ -31,3 +31,7 @@ Table optimization:
 Making leads available for outreach:
 
 - To make leads available for outreach, their information will need to be loaded into a CRM platform (ie Salesforce). There are a number of existing Reverse ETL tools/providers in the world today, but this could also be explored with Python and Salesforce's Bulk Upload API.
+
+Data Enrichment:
+
+- Work with a data provider such as ZoomInfo and set up a enrichment process where internal lead data is shared and enriched with new or missing information. New lead data pipelines could also be set up working with data providers to drop parquet files into an S3 bucket in the same region as Redshift cluster (to minimize data transport costs) for staging and copying over to Redshift, through scheduled COPY queries or AWS Glue.
